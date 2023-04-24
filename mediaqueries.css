@@ -1,0 +1,191 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    [aria-expanded="true"] ~ ul {
+        z-index: 100;
+    }
+    #most-wanted {
+        display: grid;
+        grid-template-columns: repeat(2, .5fr);
+        grid-template-rows: repeat(5, 1fr);
+        transform: translateX(1rem);
+    }
+    hr{
+        transform: translateX(21rem);
+    }
+    #pageTop {
+        padding-right: 2.9rem;
+    }
+    #scrollUp {
+        right: 0rem;
+        top: var(--size-150);
+    }
+    .title h1 {
+        transform: translateX(2rem);
+    }
+    .case-categories {
+        transform: translate(6rem, -8.5rem);
+        font-size: 1rem;
+    }
+    .top-buttons {
+        justify-content: flex-start;
+        transform: translateX(20rem);
+        width: fit-content;
+    }
+    .navbar-toggler {
+        transform: translate(2rem, -0.5rem);
+    }
+    .info-btn {
+        padding: var(--size-20);
+    }
+
+    .my-class .case-info p {
+        font-size: var(--size-30);
+    }
+    #reward, 
+    #warning, 
+    #tip {
+        font-size: var(--size-50);
+    }
+    .favsClose {
+        padding: 1.5rem;
+        font-size: var(--size-30);
+    }
+    
+    .my-class {
+        transform: translateX(0rem);
+        width: 61rem;
+    }
+
+    .my-class h2 {
+        transform: translateY(0rem);
+        font-size: var(--size-50);
+    }
+    .my-class img {
+        transform: translateY(0rem);
+        max-width: 95%;
+        max-height: 100%;
+
+    }
+    .my-class div .case-info {
+        font-size: var(--size-30);
+        transform: translateY(-1rem);
+    }
+    #reward, 
+    #warning, 
+    #tip {
+        font-size: var(--size-30);
+        transform: translateY(-1rem);
+    }
+    .navbar-toggler {
+        display: block;
+    }
+    [aria-expanded="true"] ~ ul {
+        height: 40rem;
+        font-size: var(--size-20);
+        height: -webkit-fill-available;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+    [aria-expanded="true"] ~ ul {
+        z-index: 100;
+        width: 30rem;
+        font-size: var(--size-20);
+    }
+    #most-wanted {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0rem);
+    }
+    #pageTop {
+        padding-right: 13.8rem;
+    }
+    .title h1 {
+        transform: translateX(8rem);
+    }
+    .top-buttons {
+        display: inline-flex;
+        transform: translate(26rem, -3rem);
+    }
+    .navbar-toggler {
+        transform: translate(8rem, 0.5rem);
+    }
+    .case-categories {
+        transform: translate(12rem, -10rem);
+        font-size: 1.5rem;
+    }
+    .case {
+        width: 75rem;
+    }
+    .my-class{
+        z-index: 100;
+        height: -webkit-fill-available;
+    }
+    .favsClose {
+        padding: 2rem;
+        font-size: var(--size-50);   
+    }
+    .close-fav {
+        transform: translateY(-1rem);
+    }
+    .case .my-class h2 {
+        transform: translateY(-2.5rem);
+    }
+    .my-class {
+        position: inherit;
+        padding-bottom: 13rem;
+        margin-top: -5rem;
+        transform: translateY(5rem);
+        margin-bottom: 5rem;
+    }
+    .my-class img {
+        z-index: 100;
+    }
+    .my-class .case-meta {
+        display: none;
+    }
+    .my-class div .case-info {
+        font-size: var(--size-30);
+        transform: translateY(8rem);
+    }
+    .my-class .case-info p {
+        font-size: var(--size-30);
+    }
+    #refresh, #sortCase {
+        transform: translate(-5rem, 2rem);
+        font-size: 2rem;
+    } 
+    .info-btn {
+        padding: 2rem;
+        font-size: 2rem;
+        transform: translateY(-1rem);
+    
+    }
+    .case-meta {
+        transform: translateY(-2rem);
+        font-size: 2rem;
+    }
+    .case img {
+        transform: translateY(-1.5rem);
+        max-width: 95%;
+        max-height: 100%;
+    }
+    .case h2 {    
+        transform: translateY(-1rem);
+        font-size: 4rem;
+    }
+    #reward, 
+    #warning, 
+    #tip {
+        font-size: var(--size-50);
+        transform: translateY(10rem);
+    }
+    #scrollUp {
+        bottom: 0;
+        display: none;
+    }
+}
