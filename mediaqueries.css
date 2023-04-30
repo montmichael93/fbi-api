@@ -3,15 +3,15 @@
     [aria-expanded="true"] ~ ul {
         z-index: 100;
     }
+
     #most-wanted {
-        display: grid;
-        grid-template-columns: repeat(2, .5fr);
-        grid-template-rows: repeat(5, 1fr);
-        transform: translateX(1rem);
+        justify-content: center;
     }
-    hr{
-        transform: translateX(21rem);
+
+    .case {
+        width: 100%;
     }
+
     #pageTop {
         padding-right: 2.9rem;
     }
@@ -20,26 +20,24 @@
         top: var(--size-150);
     }
     .title h1 {
-        transform: translateX(2rem);
+        transform: translateX(1rem);
+        font-size: inherit;
     }
     .case-categories {
         transform: translate(6rem, -8.5rem);
         font-size: 1rem;
     }
     .top-buttons {
-        justify-content: flex-start;
-        transform: translateX(20rem);
         width: fit-content;
+        transform: translateX(8.5rem);
     }
     .navbar-toggler {
-        transform: translate(2rem, -0.5rem);
-    }
-    .info-btn {
-        padding: var(--size-20);
+        transform: translate(2rem, -2.5rem);
+        display: inline-block;
     }
 
     .my-class .case-info p {
-        font-size: var(--size-30);
+        font-size: small;
     }
     #reward, 
     #warning, 
@@ -52,22 +50,23 @@
     }
     
     .my-class {
-        transform: translateX(0rem);
-        width: 61rem;
+        transform: translateY(-15rem);
+        height: 100%;
+        overflow-y: scroll;
     }
 
     .my-class h2 {
         transform: translateY(0rem);
-        font-size: var(--size-50);
+        font-size: var(--size-40);
     }
     .my-class img {
         transform: translateY(0rem);
-        max-width: 95%;
-        max-height: 100%;
+        max-width: 100%;
 
     }
+
     .my-class div .case-info {
-        font-size: var(--size-30);
+        font-size: small;
         transform: translateY(-1rem);
     }
     #reward, 
@@ -76,13 +75,11 @@
         font-size: var(--size-30);
         transform: translateY(-1rem);
     }
-    .navbar-toggler {
-        display: block;
-    }
+
     [aria-expanded="true"] ~ ul {
-        height: 40rem;
+        height: 50rem;
         font-size: var(--size-20);
-        height: -webkit-fill-available;
+        top: 7rem;
     }
 }
 
@@ -93,41 +90,51 @@
     }
     [aria-expanded="true"] ~ ul {
         z-index: 100;
-        width: 30rem;
         font-size: var(--size-20);
+        top: 5rem;
     }
     #most-wanted {
         display: flex;
         flex-direction: column;
         transform: translateX(0rem);
     }
+    .case {
+        width: 100%;
+    }
     #pageTop {
         padding-right: 13.8rem;
     }
+    
     .title h1 {
-        transform: translateX(8rem);
+        transform: translateX(7rem);
+        font-size: x-small;
     }
+    
     .top-buttons {
-        display: inline-flex;
-        transform: translate(26rem, -3rem);
+        transform: translate(5rem, -2rem);
     }
+
+    .title {
+        width: auto;
+    }
+
     .navbar-toggler {
-        transform: translate(8rem, 0.5rem);
+        transform: translate(1rem, -2rem);
     }
     .case-categories {
-        transform: translate(12rem, -10rem);
-        font-size: 1.5rem;
+        transform: translate(4.5rem, -10rem);
+        font-size: 1rem;
     }
     .case {
-        width: 75rem;
+        width: auto;
     }
     .my-class{
         z-index: 100;
         height: -webkit-fill-available;
     }
     .favsClose {
-        padding: 2rem;
-        font-size: var(--size-50);   
+        padding: 0.5rem;
+        font-size: var(--size-40);  
     }
     .close-fav {
         transform: translateY(-1rem);
@@ -149,39 +156,41 @@
         display: none;
     }
     .my-class div .case-info {
-        font-size: var(--size-30);
+        font-size: 1rem;
         transform: translateY(8rem);
     }
     .my-class .case-info p {
-        font-size: var(--size-30);
+        font-size: 1rem;
     }
-    #refresh, #sortCase {
-        transform: translate(-5rem, 2rem);
-        font-size: 2rem;
+    #fav-Case,
+    #Case-Collections,
+    #refresh, 
+    #sortCase {
+        transform: translate(2rem, 2rem);
+        font-size: 1rem;
     } 
     .info-btn {
-        padding: 2rem;
-        font-size: 2rem;
+        padding: 0.5rem;
+        font-size: 1rem;
         transform: translateY(-1rem);
     
     }
     .case-meta {
         transform: translateY(-2rem);
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .case img {
         transform: translateY(-1.5rem);
         max-width: 95%;
-        max-height: 100%;
     }
     .case h2 {    
         transform: translateY(-1rem);
-        font-size: 4rem;
+        font-size: 2rem;
     }
     #reward, 
     #warning, 
     #tip {
-        font-size: var(--size-50);
+        font-size: 1rem;
         transform: translateY(10rem);
     }
     #scrollUp {
